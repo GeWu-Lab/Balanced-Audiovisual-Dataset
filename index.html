@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Balanced Audiovisual Dataset for Imbalance Analysis.">
+  <meta name="keywords" content="Audio-visual, modality imbalance">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balanced Audiovisual Dataset for Imbalance Analysis</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://xwinks.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://gewu-lab.github.io/">
+            GeWu-Lab
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Balanced Audiovisual Dataset for Imbalance Analysis</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xwinks.github.io/">Wenke Xia</a><sup>1</sup><sup>†</sup>,</span>
+            <span class="author-block">
+              <a href="">Xu Zhao</a><sup>2</sup><sup>†</sup>,</span>
+            <span class="author-block">
+              <a href="">Xincheng Pang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Changqing Zhang</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Di Hu</a><sup>1</sup><sup>*</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Gaoling School of Artificial Intelligence, Renmin University of China</span>
+            <span class="author-block"><sup>2</sup>School of Computer Science and Engineering, Northeastern University</span>
+            <span class="author-block"><sup>3</sup>College of Intelligence and Computing, Tianjin University</span>
+          </div>
+
+          <div class="is-size-7">
+            <span>† Equal contribution, * Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2302.10912"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2302.10912"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://1drv.ms/f/s!AooeTdoS6OoshNUVUtvqXCz-Vmfnug?e=YQuz3Q"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            The imbalance problem is widespread in the field of machine learning, which also exists in multimodal learning
+            areas where models tend to rely on the dominant modality in the presence of discrepancies between modalities.
+          </p>
+          <p>
+            Despite Recent studies have endeavored to address the issue of modality imbalance, we observe that although existing 
+            imbalance methods exhibit superior performance on the overall testing set, they even fail to perform better
+            than the unimodal model when inference on some modality-preferred subsets.This phenomenon has not been 
+            adequately addressed in prior works but it may impact the reliability of multimodal models in
+            certain scenarios, such as those involving modality noise.
+          </p>
+          <div class="column ">
+            <img src="./static/images/intro.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+            <center>
+              <p>Figure 1: (a)-(b) show the heatmaps of modality discrepancy distribution 
+                and classification results on the existing datasets. The color represents 
+                the proportion of samples, the brighter area indicates larger samples. (c) shows
+                our balanced heatmap and the classification results.</p>
+            </center>
+            <!-- <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div> -->
+          </div>
+          <p>
+            To provide a comprehensive analysis of this phenomenon, we first evaluate existing datasets into different subsets
+            by estimating sample-wise modality discrepancy, and find that: although existing imbalance methods achieve better 
+            performance than unimodal modality on the overall testing set, they consistently perform worse than
+            the unimodal model on the visual preferred testing subset across different datasets.
+          </p>
+          <p>
+            However, given the data-driven nature of deep learning, it is inevitable that the serious modality bias present
+            in existing datasets. Thus, to further investigate the effectiveness of imbalance methods, 
+            we build a balanced audiovisual dataset containing samples with various modality discrepancies, 
+            and the allocation of such modality discrepancy remains uniformly distributed over the dataset.
+          </p>
+          <p>
+            Based on our balanced dataset, we re-evaluate existing imbalance methods and find that existing
+            multimodal models would exhibit inferior performance than the unimodal one in scenarios with
+             serious modality discrepancy. We highlight the importance of addressing this issue in future research to ensure
+             the reliability of multimodal models across various application scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!--/ Paper video. -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Statistic</h2>
+        <img src="./static/images/dataset.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+        <center>
+          <p>Illustrations of our balanced dataset statistics.</p>
+        </center>
+        <!-- <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> -->
+      </div>
+    </div>
+  
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Statistic</h2>
+        <img src="./static/images/dataset.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+        <center>
+          <p>Illustrations of our balanced dataset statistics.</p>
+        </center>
+        <!-- <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> -->
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!--/ Matting. -->
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Animation</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Interpolating states</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <!-- <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p> -->
+            <video id="replay-video"
+            controls
+            preload
+            playsinline
+            width="75%">
+            <source src="./static/videos/5.mp4"
+               type="video/mp4">
+            </video>
+            <p>
+              The audio preferred demonstration
+            </p>
+     </video>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <div>
+              <center>
+                <p id="video_category"></p>
+              </center>
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="10" min="10" max="190" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <video id="replay-video"
+            controls
+            preload
+            playsinline
+            width="75%">
+            <source src="./static/videos/195.mp4"
+               type="video/mp4">
+            </video>
+            <p>
+              The video preferred demonstration
+            </p>
+          </div>
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{xia2023balanced,
+      title={Balanced Audiovisual Dataset for Imbalance Analysis},
+      author={Xia, Wenke and Zhao, Xu and Pang, Xincheng and Zhang, Changqing and Hu, Di},
+      journal={arXiv preprint arXiv:2302.10912},
+      year={2023}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
