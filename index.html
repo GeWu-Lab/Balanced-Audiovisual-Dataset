@@ -212,38 +212,32 @@
 
     <!--/ Paper video. -->
 
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Statistic</h2>
+        <center>
+          <h2 class="title is-3">Dataset Statistic</h2>
+        </center>
+        
         <img src="./static/images/dataset.png"
         class="interpolation-image"
         alt="Interpolate start reference image."/>
         <center>
-          <p>Illustrations of our balanced dataset statistics.</p>
+          <p>Figure 2: Illustrations of our balanced dataset statistics.</p>
         </center>
-        <!-- <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div> -->
+        
+        <p>Our balanced audiovisual dataset obtains 35,851 videos for over 100 hours. 
+          We split our dataset into training, validation,and testing subsets
+           with 28,949, 3,018, and 3,884 videos, respectively.
+          We provide statistical analysis of our dataset in Figure 2. Although we have
+           adopted filter methods to balance the modality discrepancy in each category,
+            the intrinsic properties of categories make it hard to guarantee such balanced
+             modality discrepancy. Even so, Even so, we still do our best to guarantee that
+              each category has a relatively balanced modality discrepancy distribution,
+          which makes our further analysis more reliable</p>
       </div>
     </div>
-  
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Statistic</h2>
-        <img src="./static/images/dataset.png"
-        class="interpolation-image"
-        alt="Interpolate start reference image."/>
-        <center>
-          <p>Illustrations of our balanced dataset statistics.</p>
-        </center>
-        <!-- <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div> -->
-      </div>
-    </div>
-    
+
+
   </div>
 </section>
 
@@ -252,18 +246,17 @@
   <div class="container is-max-desktop">
     <!--/ Matting. -->
 
-    <!-- Animation. -->
+
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <center>
+          <h2 class="title is-3">Sample with different Modality Discrepancy</h2>
+        </center>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            We provide the samples with different modality discrepancy. Use the slider here 
+            to linearly change between the audio-dominated subset and the visual-dominated subset.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
@@ -315,33 +308,32 @@
         <br/>
         <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
     <!--/ Animation. -->
   </div>
 </section>
 
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <img src="./static/images/dataset.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+        <center>
+          <p>Illustrations of our balanced dataset statistics.</p>
+        </center>
+
+        <p>Our balanced audiovisual dataset obtains 35,851 videos for over 100 hours. We split our dataset into training, validation,
+           and testing subsets with 28,949, 3,018, and 3,884 videos, respectively. We provide statistical analysis of our dataset in Figure 2.</p>
+      </div>
+    </div>
+
+  </div>
+</section> -->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">

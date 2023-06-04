@@ -37,7 +37,16 @@ $(document).ready(function() {
 
     });
 
-
+    fetch('./static/images/corresponding.json')
+    .then(response => response.json())
+    .then(data => {
+      // Use the loaded JSON data here
+      console.log(data);
+    })
+    .catch(error => {
+      // Handle any errors that occurred during the loading process
+      console.error('Error:', error);
+    });
 
     var options = {
 			slidesToScroll: 1,
